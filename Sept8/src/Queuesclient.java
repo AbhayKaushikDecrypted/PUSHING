@@ -2,7 +2,7 @@
 public class Queuesclient {
 
 	public static void main(String[] args) {
-        Queues qu = new Queues(5);
+        Queues qu = new DynamicQueues(5);
         qu.enqueue(10);
         qu.display();
         qu.enqueue(20);
@@ -13,8 +13,7 @@ public class Queuesclient {
         qu.display();
         qu.enqueue(50);
         qu.display();
-        qu.enqueue(60);
-        qu.display();
+  
         
         System.out.println(qu.dequeue() + " removed");
 		qu.display();
@@ -25,6 +24,9 @@ public class Queuesclient {
         qu.display();
         qu.enqueue(70);
         qu.display();
+        qu.enqueue(80);
+        qu.display();
+        
 	}
 
 }

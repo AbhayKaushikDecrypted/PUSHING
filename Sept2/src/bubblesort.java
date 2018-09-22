@@ -2,12 +2,13 @@
 public class bubblesort {
 
 	public static void main(String[] args) {
-		 int[] arr = { 11, 55, 22, 33, 88 };
-		 bubblesorting(arr);
+		// int[] arr = { 11, 55, 22, 33, 88 };
+		// bubblesorting(arr);
 		// display(arr);
 		// int[] arr1 = { 10, 15, 18, 22, 27 };
 		// int[] arr2 = { 5, 7, 16, 23, 28, 40, 50 };
-		// merge(arr1, arr2);
+		// int[] arr3 = merge(arr1, arr2);
+		// display(arr3);
 		// int[] arr = { 5, 2, 1, 4, 8, 9, -10 };
 		// int[] arr3 = mergesort(arr, 0, arr.length - 1);
 		// display(arr3);

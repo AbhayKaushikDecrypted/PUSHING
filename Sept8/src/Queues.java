@@ -1,10 +1,10 @@
 
 public class Queues {
-	private int[] data;
-	private int front = 0; // parsing means assigning the values to data we
+	protected int[] data;
+	protected int front = 0; // parsing means assigning the values to data we
 							// created thus replacing the default values given
 							// by constructor itself
-	private int size = 0;
+	protected int size = 0;
 
 	public Queues(int cap) { // this is constructor name same as class
 								// every function we write is under the class we

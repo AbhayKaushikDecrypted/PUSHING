@@ -1,9 +1,9 @@
 
 public class Stacks {
-	private int[] data; // parsing means assigning the values to data we
+	protected int[] data; // parsing means assigning the values to data we
 						// created thus replacing the default values given
 						// by constructor itself
-	private int tos = -1;
+	protected int tos = -1;
 
 	public Stacks(int cap) {
 		this.data = new int[cap]; // this is constructor name same as class
@@ -33,6 +33,7 @@ public class Stacks {
 	public void push(int val) {
 		if (isFull() == true) {
 			System.out.println("stack is full");
+			return;
 		} else {
 			tos++;
 			data[tos] = val;

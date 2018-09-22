@@ -11,10 +11,14 @@ public class client {
 		// System.out.println(ch);
 		// int[] arr = { 5, 2, 0, 0, 9, 0, 8, 0, 0, 0, 7 };
 		// anoymoussort(arr);
-		// int[] cx = { 15, 8, 15, 3, 8, 7 };
-		// find2(cx);
-		soe(100); // most efficient method for calculating square root sieve of
-					// eratosthenes
+		// display(arr);
+		// int[] cx1 = { 15, 8, 15, 3, 8 };
+		// find(cx1);
+		// int[] cx2 = { 15, 8, 15, 3, 7, 8 };
+		// find2(cx2);
+		soe(100); // most efficient method for calculating square root sieve
+		// of
+		// eratosthenes
 	}
 
 	private static char HFC(String x, int[] findex) {
@@ -60,7 +64,7 @@ public class client {
 				d++;
 			}
 		}
-		display(arr1);
+
 	}
 
 	private static void swap(int[] arr, int j, int i) {
@@ -77,9 +81,15 @@ public class client {
 
 	private static void find(int[] cx) {
 		int unique = 0;
+
 		for (int val : cx) {
 			unique ^= val;
 		}
+
+		// for (int i = 0; i < cx.length; i++) {
+		// unique = unique^cx[i];
+		// }
+
 		System.out.println(unique);
 
 	}

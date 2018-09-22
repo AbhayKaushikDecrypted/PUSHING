@@ -10,10 +10,11 @@ public class Patterns {
 		// IT(r, 1, 1);
 		// INT(r, 1,1);
 		// ITFS(r, 1, 1, 0, 1);
-		// CIT(r); // do that once again
+		CIT(r); // do that once again
 		// TX(r);
 		// SD(r);
 		// ND(r); // do that once again
+		scn.close();
 	}
 
 	private static void IT(int r, int pr, int c) {

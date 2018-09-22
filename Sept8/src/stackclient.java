@@ -12,42 +12,44 @@ public class stackclient {
 		// System.out.println(res4);
 		// boolean res1 = isDuplicate("(a+(b+(c+d)+e)+f)");
 		// System.out.println(res1);
-		// int[] arr = {30, 35, 40, 60, 50, 45, 48, 49, 55, 70, 20, 29, 35, 30,20};
+		// int[] arr = {30, 35, 40, 60, 50, 45, 48, 49, 55, 70, 20, 29, 35,
+		// 30,20};
 		// StockSpan(arr);
-		DI("diddidd");
+		// DI("diddidd");
 
-		// Stacks st = new Stacks(5);
-		// st.push(10);
-		// st.display();
-		// st.push(20);
-		// st.display();
-		// st.push(30);
-		// st.display();
-		// st.push(40);
-		// st.display();
-		// st.push(50);
-		// st.display();
-		// st.push(60);
-		// st.display();
-		//
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
-		// System.out.println(st.pop() + " removed");
-		// System.out.println("remaining stack");
-		// st.display();
+		// Stacks st = new DnamicStack(5);
+		StackUsingQueues st = new StackUsingQueues(5);
+		st.push(10);
+		st.display();
+		st.push(20);
+		st.display();
+		st.push(30);
+		st.display();
+		st.push(40);
+		st.display();
+		st.push(50);
+		st.display();
+		st.push(60);
+		st.display();
+
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
+		System.out.println(st.pop() + " removed");
+		System.out.println("remaining stack");
+		st.display();
 
 	}
 
@@ -159,7 +161,7 @@ public class stackclient {
 
 	public static void DI(String s) {
 		int counter = 1;
-		Stacks st = new Stacks(s.length()+1);
+		Stacks st = new Stacks(s.length() + 1);
 		for (int i = 0; i < s.length(); i++) {
 			char ch = s.charAt(i);
 			if (ch == 'd') {
