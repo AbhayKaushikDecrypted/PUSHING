@@ -1,9 +1,9 @@
-public class StackUsingQueues {
+public class StackUsingQueuesPopEfficient {
 	Queues dq;
 	Queues hq;
 
 	// POP EFFICIENT
-	public StackUsingQueues(int cap) {
+	public StackUsingQueuesPopEfficient(int cap) {
 		dq = new Queues(cap);
 		hq = new Queues(cap);
 	}

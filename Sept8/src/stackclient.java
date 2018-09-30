@@ -2,23 +2,18 @@
 public class stackclient {
 
 	public static void main(String[] args) {
-		// boolean res1 = isBalanced("[a+{b+(c+d)+e}+f]");
-		// boolean res2 = isBalanced("[a+{b+(c+d)+e)+f]");
-		// boolean res3 = isBalanced("[a+{b+(c+d)+e}+f");
-		// boolean res4 = isBalanced("a+{b+(c+d)+e}+f]");
-		// System.out.println(res1);
-		// System.out.println(res2);
-		// System.out.println(res3);
-		// System.out.println(res4);
-		// boolean res1 = isDuplicate("(a+(b+(c+d)+e)+f)");
-		// System.out.println(res1);
-		// int[] arr = {30, 35, 40, 60, 50, 45, 48, 49, 55, 70, 20, 29, 35,
-		// 30,20};
+		// System.out.println(isBalanced("[a+{b+(c+d)+e}+f]"));
+		// System.out.println(isBalanced("[a+{b+(c+d)+e)+f]"));
+		// System.out.println(isBalanced("[a+{b+(c+d)+e}+f"));
+		// System.out.println(isBalanced("a+{b+(c+d)+e}+f]"));
+		// System.out.println(isDuplicate("(a+(b+(c+d)+e)+f)"));
+		// int[] arr = { 30, 35, 40, 60, 50, 45, 48, 49, 55, 70, 20, 29, 35, 30,
+		// 20 };
 		// StockSpan(arr);
 		// DI("diddidd");
 
 		// Stacks st = new DnamicStack(5);
-		StackUsingQueues st = new StackUsingQueues(5);
+		StackUsingQueuesPushEfficient st = new StackUsingQueuesPushEfficient(5);
 		st.push(10);
 		st.display();
 		st.push(20);
@@ -32,29 +27,28 @@ public class stackclient {
 		st.push(60);
 		st.display();
 
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
-		System.out.println(st.pop() + " removed");
-		System.out.println("remaining stack");
-		st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
+		// System.out.println(st.pop() + " removed");
+		// System.out.println("remaining stack");
+		// st.display();
 
 	}
 
 	public static boolean isBalanced(String str) {
-		boolean res;
 		Stacks st = new Stacks(str.length());
 		for (int i = 0; i < str.length(); i++) {
 			char ch = str.charAt(i);
@@ -65,26 +59,18 @@ public class stackclient {
 					return false;
 				}
 
-				else if (str.charAt(i) == ')' && st.top() == '(') {
+				else if (ch == ')' && st.top() == '(') {
 					System.out.println(st.pop() + " removed");
-				} else if (str.charAt(i) == '}' && st.top() == '{') {
+				} else if (ch == '}' && st.top() == '{') {
 					System.out.println(st.pop() + " removed");
-				} else if (str.charAt(i) == ']' && st.top() == '[') {
+				} else if (ch == ']' && st.top() == '[') {
 					System.out.println(st.pop() + " removed");
 				} else {
 					return false;
 				}
 			}
 		}
-
-		if (st.isEmpty() == true)
-
-		{
-			res = true;
-		} else {
-			res = false;
-		}
-		return res;
+		return st.isEmpty();
 	}
 
 	public static boolean isDuplicate(String str) {
@@ -142,7 +128,7 @@ public class stackclient {
 		st1.push(0);
 		for (int i = 1; i < arr.length; i++) {
 
-			while (st1.isEmpty() == false && arr[st1.top()] < arr[i]) {
+			while (!(st1.isEmpty()) && arr[st1.top()] < arr[i]) {
 				st1.pop();
 			}
 
@@ -180,6 +166,5 @@ public class stackclient {
 		while (st.isEmpty() == false) {
 			System.out.print(st.pop());
 		}
-
 	}
 }

@@ -2,8 +2,9 @@
 public class Queues {
 	protected int[] data;
 	protected int front = 0; // parsing means assigning the values to data we
-							// created thus replacing the default values given
-							// by constructor itself
+								// created thus replacing the default values
+								// given
+								// by constructor itself
 	protected int size = 0;
 
 	public Queues(int cap) { // this is constructor name same as class
@@ -31,7 +32,7 @@ public class Queues {
 	}
 
 	public void enqueue(int val) {
-		if (isFull() == true) {
+		if (isFull()) {
 			System.out.println("queue is full");
 			return;
 		}
@@ -41,7 +42,7 @@ public class Queues {
 	}
 
 	public int dequeue() {
-		if (isEmpty() == true) {
+		if (isEmpty()) {
 			System.out.println("queue is empty");
 			return -1;
 		}
@@ -53,7 +54,7 @@ public class Queues {
 	}
 
 	public int front() {
-		if (isEmpty() == true) {
+		if (isEmpty()) {
 			System.out.println("queue is empty");
 			return -1;
 		}
